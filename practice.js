@@ -35,21 +35,26 @@ var devMountainGoal = null
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-//Code here
+function greeting(name){
+  return 'hello, ' + name
+}
+var name = "Sid"
 
 //////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-//Code Here
-
+var newGreeting = function(name){
+  return 'hello, ' + name
+}
+var name = "sid"
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here
+var groceries = ['apples', 'milk', 'eggs', 'bread']
 
 //////////////////PROBLEM 9////////////////////
 
@@ -58,7 +63,12 @@ var devMountainGoal = null
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+var dog = {
+  name: 'Bode',
+  color: 'Black',
+  age: 11,
+  goodboy: true
+};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
@@ -74,7 +84,13 @@ var devMountainGoal = null
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in
 
-// Code here
+function nameCheck(name){
+  if (name === 'Steven')
+  return 'What is up Steven?'
+  else if (name === 'Bryan')
+  return 'Hey Bryan!'
+  else return 'Cool name, ' + name 
+}
 
 //////////////////PROBLEM 11////////////////////
 
@@ -82,12 +98,13 @@ var devMountainGoal = null
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
-
+function add(num1, num2){
+  return num1 + num2
+}
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+var mathSum = add(3, 4)
 
 //////////////////PROBLEM 12////////////////////
 
@@ -98,7 +115,15 @@ var devMountainGoal = null
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function favColorFinder(color){
+  if (color === 'red')
+  return 'red is a great color'
+  if (color === 'green')
+  return 'green is a solid favorite color'
+  if (color === 'black')
+  return 'so trendy'
+  else return 'you need to evaluate your favorite color choice'
+}
 
 //////////////////PROBLEM 13////////////////////
 
@@ -137,13 +162,13 @@ let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //Create a variable called age with your age assigned to you
 
-// Code Here
+var age = 18
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-// Code Here
+var age = 19
 
 // Good news! We can live forever. Set your age to 999
 
-// Code Here
+var age = 999
